@@ -13,7 +13,7 @@ let students = [];
 
 const app = express();
 
-// app.use(express.json());
+app.use(express.json());
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'))
